@@ -91,7 +91,7 @@ function renderMenu(tab) {
   const items = menuData[tab] || [];
   container.innerHTML = items.map(item => `
     <div class="carta-item ${item.image ? 'has-img' : ''}">
-      ${item.image ? `<div class="carta-item-img"><img src="${item.image}" alt="${item.name}" loading="lazy"></div>` : ''}
+      ${item.image ? `<div class="carta-item-img"><img src="${item.image}" alt="${item.name}"></div>` : ''}
       <div class="carta-item-content">
         <div class="carta-item-info">
           <h4>${item.name}</h4>
